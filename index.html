@@ -1,1 +1,164 @@
-fuseout.de
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FUSEOUT | Rock- &amp; Alternative-Coverband der 90er/2000er</title>
+  <meta name="description" content="FUSEOUT bringt energiegeladene Rock- und Alternative-Songs der späten 90er und 2000er zurück auf die Bühne. Live, laut und ohne Rockstar-Attitüde.">
+  <link rel="canonical" href="https://fuseout.de/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FUSEOUT">
+  <meta property="og:title" content="FUSEOUT | Rock- &amp; Alternative-Coverband der 90er/2000er">
+  <meta property="og:description" content="Energiegeladene Rock- und Alternative-Songs der späten 90er und 2000er. Live, laut und ohne Rockstar-Attitüde.">
+  <meta property="og:url" content="https://fuseout.de/">
+  <meta property="og:image" content="https://fuseout.de/fuseout-logo-transparent.png">
+  <meta property="og:image:alt" content="FUSEOUT-Logo mit einer leuchtenden, kurz vor der Explosion stehenden Lampe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FUSEOUT | Rock- &amp; Alternative-Coverband der 90er/2000er">
+  <meta name="twitter:description" content="Energiegeladene Rock- und Alternative-Songs der späten 90er und 2000er. Live, laut und ohne Rockstar-Attitüde.">
+  <meta name="twitter:image" content="https://fuseout.de/fuseout-logo-transparent.png">
+  <link rel="icon" type="image/png" href="fuseout-favicon.png">
+  <style>
+    :root {
+      /* FUSEOUT brand tokens, inlined from assets/fuseout/brandkit/tokens/fuseout.css */
+      --fuseout-black: #0F0804;
+      --fuseout-black-glow: #160E09;
+      --fuseout-black-deep: #050301;
+      --fuseout-brass: #B88F4D;
+      --fuseout-brass-glow: #FFD187;
+      --fuseout-brass-deep: #6B522A;
+      --fuseout-spark: #7184A1;
+      --fuseout-spark-glow: #B2C8EB;
+      --fuseout-spark-deep: #414C5E;
+      --fuseout-ember: #B37346;
+      --fuseout-ember-glow: #FFB581;
+      --fuseout-cream: #B5A08F;
+      --fuseout-cream-glow: #FFE7D4;
+      --fuseout-cream-deep: #695C52;
+      --fuseout-font-mono: "IBM Plex Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: var(--fuseout-black);
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 6vh 6vw;
+      font-family: var(--fuseout-font-mono);
+      color: var(--fuseout-cream);
+      background:
+        radial-gradient(ellipse at 50% 30%, var(--fuseout-black-glow) 0%, var(--fuseout-black) 65%),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.015) 0px, rgba(255, 255, 255, 0.015) 1px, transparent 1px, transparent 3px);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 40rem;
+    }
+
+    .logo {
+      width: min(100%, 34rem);
+      height: auto;
+      filter: drop-shadow(0 0 28px rgba(255, 209, 135, 0.25));
+      animation: flicker 7.2s linear infinite;
+      will-change: filter, transform;
+    }
+
+    .tagline {
+      margin: 1.75rem 0 0.5rem;
+      font-size: clamp(0.85rem, 2.2vw, 1.1rem);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--fuseout-brass-glow);
+    }
+
+    .status {
+      margin: 0;
+      font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+      letter-spacing: 0.08em;
+      color: var(--fuseout-cream-deep);
+    }
+
+    .social {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      font-size: clamp(0.7rem, 1.6vw, 0.8rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .social a {
+      color: var(--fuseout-brass);
+      text-decoration: none;
+      border-bottom: 1px solid var(--fuseout-brass-deep);
+      padding-bottom: 0.15rem;
+    }
+
+    .social a:hover {
+      color: var(--fuseout-brass-glow);
+      border-color: var(--fuseout-brass-glow);
+    }
+
+    @keyframes flicker {
+      0%, 38%, 41%, 44%, 54%, 100% {
+        filter: brightness(1) drop-shadow(0 0 28px rgba(255, 209, 135, 0.25));
+        transform: translate(0, 0);
+      }
+      39%, 43%, 58%, 65%, 73% {
+        filter: brightness(0.78) drop-shadow(0 0 9px rgba(255, 209, 135, 0.09));
+      }
+      40%, 45%, 59%, 66%, 74% {
+        filter: brightness(1.12) drop-shadow(0 0 36px rgba(255, 209, 135, 0.4));
+      }
+      62%, 70% {
+        filter: brightness(0.62) drop-shadow(0 0 4px rgba(255, 209, 135, 0.04));
+      }
+      77% {
+        filter: brightness(1.18) drop-shadow(0 0 42px rgba(255, 209, 135, 0.48));
+        transform: translate(-1px, 1px);
+      }
+      78% {
+        filter: brightness(0.72) drop-shadow(0 0 7px rgba(255, 209, 135, 0.07));
+        transform: translate(1px, -1px);
+      }
+      79%, 82% {
+        filter: brightness(1.24) drop-shadow(0 0 48px rgba(255, 209, 135, 0.55));
+        transform: translate(-1px, 0);
+      }
+      80%, 81% {
+        filter: brightness(0.7) drop-shadow(0 0 6px rgba(255, 209, 135, 0.06));
+        transform: translate(1px, 1px);
+      }
+      83% {
+        filter: brightness(1.08) drop-shadow(0 0 34px rgba(255, 209, 135, 0.32));
+        transform: translate(0, 0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .logo { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="fuseout-logo-transparent.png" alt="FUSEOUT">
+    <p class="tagline">The Light Stays On</p>
+    <p class="status">Website coming soon.</p>
+  </main>
+</body>
+</html>
