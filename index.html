@@ -74,7 +74,7 @@
       height: auto;
       filter: drop-shadow(0 0 28px rgba(255, 209, 135, 0.25));
       animation: flicker 7.2s linear infinite;
-      will-change: filter, transform;
+      will-change: opacity, transform;
     }
 
     .tagline {
@@ -115,36 +115,36 @@
 
     @keyframes flicker {
       0%, 38%, 41%, 44%, 54%, 100% {
-        filter: brightness(1) drop-shadow(0 0 28px rgba(255, 209, 135, 0.25));
+        opacity: 1;
         transform: translate(0, 0);
       }
       39%, 43%, 58%, 65%, 73% {
-        filter: brightness(0.78) drop-shadow(0 0 9px rgba(255, 209, 135, 0.09));
+        opacity: 0.52;
       }
       40%, 45%, 59%, 66%, 74% {
-        filter: brightness(1.12) drop-shadow(0 0 36px rgba(255, 209, 135, 0.4));
+        opacity: 1;
       }
       62%, 70% {
-        filter: brightness(0.62) drop-shadow(0 0 4px rgba(255, 209, 135, 0.04));
+        opacity: 0.28;
       }
       77% {
-        filter: brightness(1.18) drop-shadow(0 0 42px rgba(255, 209, 135, 0.48));
+        opacity: 1;
         transform: translate(-1px, 1px);
       }
       78% {
-        filter: brightness(0.72) drop-shadow(0 0 7px rgba(255, 209, 135, 0.07));
+        opacity: 0.42;
         transform: translate(1px, -1px);
       }
       79%, 82% {
-        filter: brightness(1.24) drop-shadow(0 0 48px rgba(255, 209, 135, 0.55));
+        opacity: 1;
         transform: translate(-1px, 0);
       }
       80%, 81% {
-        filter: brightness(0.7) drop-shadow(0 0 6px rgba(255, 209, 135, 0.06));
+        opacity: 0.38;
         transform: translate(1px, 1px);
       }
       83% {
-        filter: brightness(1.08) drop-shadow(0 0 34px rgba(255, 209, 135, 0.32));
+        opacity: 0.88;
         transform: translate(0, 0);
       }
     }
